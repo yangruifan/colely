@@ -22,7 +22,7 @@ NEWSPIDER_MODULE = 'cbooo.spiders'
 ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
-#CONCURRENT_REQUESTS = 32
+CONCURRENT_REQUESTS = 32
 
 # Configure a delay for requests for the same website (default: 0)
 # See https://doc.scrapy.org/en/latest/topics/settings.html#download-delay
@@ -52,9 +52,11 @@ ROBOTSTXT_OBEY = False
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
-#DOWNLOADER_MIDDLEWARES = {
-#    'cbooo.middlewares.CboooDownloaderMiddleware': 543,
-#}
+DOWNLOADER_MIDDLEWARES = {
+    # 'cbooo.middlewares.ProxyPoolMiddleware': 543,
+    'cbooo.middlewares.UserAgentMiddleware': 443,
+    'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+}
 
 # Enable or disable extensions
 # See https://doc.scrapy.org/en/latest/topics/extensions.html
@@ -64,9 +66,9 @@ ROBOTSTXT_OBEY = False
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'cbooo.pipelines.CboooPipeline': 300,
-#}
+ITEM_PIPELINES = {
+   'cbooo.pipelines.Pipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
@@ -88,3 +90,23 @@ ROBOTSTXT_OBEY = False
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+# LOCALHOST = "localhost"
+# USER = "root"
+# PASSWORD = "960823"
+# DB = "maizuo"
+# PORT = 3306
+
+LOCALHOST = "gz-cdb-l4r5h3m3.sql.tencentcdb.com"
+USER = "root"
+PASSWORD = "samVW!$#jh"
+DB = "market_spider"
+PORT = 61928
+
+REDIS_SETTING = {
+    'host': '10.125.0.7',
+    'port': 6379,
+    'db': 0,
+    'password': 'crs-hbnwcb9i:r@16samVW!jh'
+}
+COMPANY_FROM = '中国票房'
