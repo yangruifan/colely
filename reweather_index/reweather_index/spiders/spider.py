@@ -33,7 +33,7 @@ class SpiderSpider(scrapy.Spider):
         else:
             for result in results:
                 city = result[0].replace('市', '')
-                sql = """select distinct url,province,city,county,countynum from %s where county=%r""" % (self.dbname1, city)
+                sql = """select distinct url,province,city,county,countynum from %s where city=%r""" % (self.dbname1, city)
                 # 执行sql语句
                 self.cursor1.execute(sql)
                 # 获取所有记录列表
@@ -41,18 +41,19 @@ class SpiderSpider(scrapy.Spider):
                 if not urls:
                     pass
                 else:
-                    url = urls[0][0]
-                    yield scrapy.Request(url=url,
-                                         dont_filter=True,
-                                         meta={
-                                             'handle_httpstatus_all': True,
-                                             'village': urls[0][2],
-                                             'towns': urls[0][3],
-                                             'cityname': urls[0][1],
-                                             'daihao': urls[0][4],
-                                         },
+                    for url in urls:
+                        urla = url[0]
+                        yield scrapy.Request(url=urla,
+                                             dont_filter=True,
+                                             meta={
+                                                 'handle_httpstatus_all': True,
+                                                 'city': url[2],
+                                                 'county': url[3],
+                                                 'province': url[1],
+                                                 'countynum': url[4],
+                                             },
 
-                                         )
+                                             )
 
     def parse(self, response):
         """
@@ -71,22 +72,22 @@ class SpiderSpider(scrapy.Spider):
                 name = datas[i + 1].replace('健臻·', '')
                 zhishu = datas[i]
                 zhishu_details = datas[i + 2]
-                village = response.meta['village']
-                areanum = response.meta['daihao']
-                towns = response.meta['towns']
-                cityname = response.meta['cityname']
+                city = response.meta['city']
+                province = response.meta['province']
+                countynum = response.meta['countynum']
+                county = response.meta['county']
                 fetch_time = datetime.datetime.now().strftime('%Y-%m-%d')
                 url = response.url
                 weatheritem['num'] = str(i // 3 + 1)
                 weatheritem['name'] = name
                 weatheritem['zhishu'] = zhishu
                 weatheritem['zhishu_details'] = zhishu_details
-                weatheritem['cityname'] = towns
-                weatheritem['areaname'] = village
-                weatheritem['provincename'] = cityname
+                weatheritem['cityname'] = city
+                weatheritem['areaname'] = county
+                weatheritem['provincename'] = province
                 weatheritem['fetch_time'] = fetch_time
                 weatheritem['url'] = url
-                weatheritem['areanum'] = areanum
+                weatheritem['areanum'] = countynum
                 weatheritem['source'] = COMPANY_FROM
                 yield weatheritem
             chuanyi = response.xpath(
@@ -94,22 +95,22 @@ class SpiderSpider(scrapy.Spider):
             name = chuanyi[1]
             zhishu = chuanyi[0]
             zhishu_details = chuanyi[2]
-            village = response.meta['village']
-            areanum = response.meta['daihao']
-            towns = response.meta['towns']
-            cityname = response.meta['cityname']
+            city = response.meta['city']
+            province = response.meta['province']
+            countynum = response.meta['countynum']
+            county = response.meta['county']
             fetch_time = datetime.datetime.now().strftime('%Y-%m-%d')
             url = response.url
             weatheritem['num'] = 5
             weatheritem['name'] = name
             weatheritem['zhishu'] = zhishu
             weatheritem['zhishu_details'] = zhishu_details
-            weatheritem['cityname'] = towns
-            weatheritem['areaname'] = village
-            weatheritem['provincename'] = cityname
+            weatheritem['cityname'] = city
+            weatheritem['areaname'] = county
+            weatheritem['provincename'] = province
             weatheritem['fetch_time'] = fetch_time
             weatheritem['url'] = url
-            weatheritem['areanum'] = areanum
+            weatheritem['areanum'] = countynum
             weatheritem['source'] = COMPANY_FROM
             yield weatheritem
         # elif response.status == 429:
@@ -120,10 +121,10 @@ class SpiderSpider(scrapy.Spider):
                 url=response.url,
                 meta={
                     'handle_httpstatus_all': True,
-                    'village': response.meta['village'],
-                    'towns': response.meta['towns'],
-                    'cityname': response.meta['cityname'],
-                    'daihao': response.meta['daihao'],
+                    'city': response.meta['city'],
+                    'county': response.meta['county'],
+                    'province': response.meta['province'],
+                    'countynum': response.meta['countynum'],
                 },
                 dont_filter=True,
                 callback=self.parse)
