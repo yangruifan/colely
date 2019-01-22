@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb273522-64ab-4c00-a402-0b726af1c0e3" name="Default Changelist" comment="">
+    <list default="true" id="bb273522-64ab-4c00-a402-0b726af1c0e3" name="Default Changelist" comment="是">
+      <change afterPath="$PROJECT_DIR$/../Cbooo.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cbooonew.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cbooonew/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cbooonew/cbooonew/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cbooonew/cbooonew/begin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cbooonew/cbooonew/items.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cbooonew/cbooonew/middlewares.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cbooonew/cbooonew/pipelines.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cbooonew/cbooonew/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cbooonew/cbooonew/spiders/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cbooonew/cbooonew/spiders/spider.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cbooonew/scrapy.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fangtianxia/.idea/fangtianxia.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fangtianxia/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fangtianxia/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../move_mysql_ivest/try.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -15,6 +31,7 @@
     <session id="-1680446626">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -22,12 +39,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="py" value="416" />
-          <entry key="txt" value="29" />
+          <entry key="txt" value="45" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="29" />
+          <entry key="PLAIN_TEXT" value="45" />
           <entry key="Python" value="416" />
         </counts>
       </usages-collector>
@@ -45,11 +62,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/reweather_index/spiders/spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-616">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="396">
+              <caret line="90" column="33" lean-forward="true" selection-start-line="90" selection-start-column="33" selection-end-line="90" selection-end-column="33" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
                 <marker date="1548131107303" expanded="true" signature="281:1985" ph="..." />
@@ -96,10 +113,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/reweather_index/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
+            <state relative-caret-position="-1804">
               <caret line="17" column="80" lean-forward="true" selection-start-line="17" selection-start-column="80" selection-end-line="17" selection-end-column="80" />
             </state>
           </provider>
@@ -118,6 +135,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -180,7 +200,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="F:/colely_project/weatherzhishu" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../fangtianxia" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RunDashboard">
@@ -248,7 +268,21 @@
       <option name="project" value="LOCAL" />
       <updated>1548075678173</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="是">
+      <created>1548131141284</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1548131141284</updated>
+    </task>
+    <task id="LOCAL-00004" summary="天气指数">
+      <created>1548137373332</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1548137373332</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -258,13 +292,13 @@
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19114584" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Version Control" visible="true" weight="0.32979852" />
       <window_info anchor="bottom" id="Python Console" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32979852" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32979852" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997879" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -274,13 +308,41 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="根据缺失重新获取天气指数" />
     <MESSAGE value="影投数据迁移到广电" />
-    <option name="LAST_COMMIT_MESSAGE" value="影投数据迁移到广电" />
+    <MESSAGE value="是" />
+    <MESSAGE value="天气指数" />
+    <option name="LAST_COMMIT_MESSAGE" value="天气指数" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -345,21 +407,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reweather_index/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="17" column="80" lean-forward="true" selection-start-line="17" selection-start-column="80" selection-end-line="17" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/reweather_index/spiders/spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-616">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="396">
+          <caret line="90" column="33" lean-forward="true" selection-start-line="90" selection-start-column="33" selection-end-line="90" selection-end-column="33" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
             <marker date="1548131107303" expanded="true" signature="281:1985" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reweather_index/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1804">
+          <caret line="17" column="80" lean-forward="true" selection-start-line="17" selection-start-column="80" selection-end-line="17" selection-end-column="80" />
         </state>
       </provider>
     </entry>

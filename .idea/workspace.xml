@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e329d3f0-c8d5-46d6-8656-2df989a9a2d1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/move_mysql_ivest/move_invest.py" beforeDir="false" afterPath="$PROJECT_DIR$/move_mysql_ivest/move_invest.py" afterDir="false" />
+    <list default="true" id="e329d3f0-c8d5-46d6-8656-2df989a9a2d1" name="Default Changelist" comment="淘票票想看">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,7 +14,7 @@
     <session id="-963738044">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.opened" value="4" />
@@ -33,12 +33,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="py" value="6659" />
-          <entry key="txt" value="23" />
+          <entry key="txt" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="23" />
+          <entry key="PLAIN_TEXT" value="28" />
           <entry key="Python" value="6659" />
         </counts>
       </usages-collector>
@@ -49,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/move_mysql_ivest/move_invest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="184" column="18" selection-start-line="184" selection-start-column="18" selection-end-line="184" selection-end-column="18" />
+            <state relative-caret-position="497">
+              <caret line="181" selection-start-line="181" selection-end-line="181" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
                 <marker date="1548072138620" expanded="true" signature="634:639" ph="..." />
@@ -340,18 +340,26 @@
       <option name="project" value="LOCAL" />
       <updated>1548052393976</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="淘票票想看">
+      <created>1548126990562</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1548126990562</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.110416666" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.43584305" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.43584305" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49947917" weight="0.4156946" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -391,7 +399,8 @@
     <MESSAGE value="新增" />
     <MESSAGE value="爬虫启动程序" />
     <MESSAGE value="数据库表对应" />
-    <option name="LAST_COMMIT_MESSAGE" value="数据库表对应" />
+    <MESSAGE value="淘票票想看" />
+    <option name="LAST_COMMIT_MESSAGE" value="淘票票想看" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -618,8 +627,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/move_mysql_ivest/move_invest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="184" column="18" selection-start-line="184" selection-start-column="18" selection-end-line="184" selection-end-column="18" />
+        <state relative-caret-position="497">
+          <caret line="181" selection-start-line="181" selection-end-line="181" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
             <marker date="1548072138620" expanded="true" signature="634:639" ph="..." />
