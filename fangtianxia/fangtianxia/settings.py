@@ -19,7 +19,7 @@ NEWSPIDER_MODULE = 'fangtianxia.spiders'
 #USER_AGENT = 'fangtianxia (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -52,9 +52,11 @@ ROBOTSTXT_OBEY = True
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
-#DOWNLOADER_MIDDLEWARES = {
-#    'fangtianxia.middlewares.FangtianxiaDownloaderMiddleware': 543,
-#}
+DOWNLOADER_MIDDLEWARES = {
+    # 'fangtianxia.middlewares.ProxyPoolMiddleware': 543,
+    'fangtianxia.middlewares.UserAgentMiddleware': 443,
+    'scrapy.downloadermiddleware.useragent.UserAgentMiddleware': None,
+}
 
 # Enable or disable extensions
 # See https://doc.scrapy.org/en/latest/topics/extensions.html
@@ -88,3 +90,42 @@ ROBOTSTXT_OBEY = True
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+
+# LOCALHOST = "localhost"
+# USER = "root"
+# PASSWORD = "960823"
+# DB = "maizuo"
+# PORT = 3306
+
+LOCALHOST = "gz-cdb-l4r5h3m3.sql.tencentcdb.com"
+USER = "root"
+PASSWORD = "samVW!$#jh"
+DB = "market_spider"
+PORT = 61928
+MY_SQL = {
+    'db': 'market_spider',
+    'user': 'root',
+    'password': 'samVW!$#jh',
+    'host': 'gz-cdb-l4r5h3m3.sql.tencentcdb.com',
+    'port': 61928
+}
+MY_SQL1 = {
+    'db': 'dss_movie',
+    'user': 'root',
+    'password': 'samVW!$#jh',
+    'host': 'gz-cdb-dcwhfcdd.sql.tencentcdb.com',
+    'port': 61902
+}  # 广电
+
+RETRY_ENABLED = False
+RETRY_TIMES = 5
+
+
+REDIS_SETTING = {
+    'host': '10.125.0.7',
+    'port': 6379,
+    'db': 0,
+    'password': 'crs-hbnwcb9i:r@16samVW!jh'
+}
+COMPANY_FROM = '中国天气'
