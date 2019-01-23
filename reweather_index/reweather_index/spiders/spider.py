@@ -4,7 +4,7 @@ from reweather_index.settings import MY_SQL1, MY_SQL, COMPANY_FROM
 import pymysql
 import datetime
 from reweather_index.items import WeatherItem
-# 3点40分爬动程序
+# 3点40分爬动程序（重新部署）
 
 
 class SpiderSpider(scrapy.Spider):
