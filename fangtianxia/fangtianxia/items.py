@@ -8,24 +8,28 @@
 import scrapy
 
 
-class WeatherItem(scrapy.Item):
+class FangtianxiaItem(scrapy.Item):
     # define the fields for your item here like:
-    # name = scrapy.Field()、
-    #分类
-    name = scrapy.Field()
-    num = scrapy.Field()
-    # 指数值与详情
-    zhishu = scrapy.Field()
-    zhishu_details = scrapy.Field()
-    # 市
-    cityname = scrapy.Field()
-    # 区
-    areaname = scrapy.Field()
-    areanum = scrapy.Field()
-    # 省
-    provincename = scrapy.Field()
-    # 爬取时间
-    fetch_time = scrapy.Field()
-    # url
+    # name = scrapy.Field()
     url = scrapy.Field()
-    source = scrapy.Field()
+    url_hash = scrapy.Field()
+    oldprice = scrapy.Field()
+    nowprice = scrapy.Field()
+    xiaoqudizhi = scrapy.Field()
+    lvhualv = scrapy.Field()
+    wuyegongsi = scrapy.Field()
+    jianzhujiegou = scrapy.Field()
+    rongjilv = scrapy.Field()
+    youbian = scrapy.Field()
+    loudong = scrapy.Field()
+    wuyefei = scrapy.Field()
+    jianzhuniandai = scrapy.Field()
+    kaifashang = scrapy.Field()
+    jianzhumianji = scrapy.Field()
+    fangwuzongshu = scrapy.Field()
+    wuyeleibie = scrapy.Field()
+    fujiaxinxi = scrapy.Field()
+    zhandimianji = scrapy.Field()
+    jianzhuleixing = scrapy.Field()
+    chanquanmiansu = scrapy.Field()
+    suoshuquyu = scrapy.Field()
