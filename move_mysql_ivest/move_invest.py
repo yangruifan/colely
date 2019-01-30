@@ -176,13 +176,12 @@ def cinema_cinema(a, b):
 
 if __name__ == '__main__':
     pro = move_inverst()
-    # pro.move_cinema_invest()
-
-    data= pro.get_cinema_name()
+    pro.move_cinema_invest()
+    data = pro.get_cinema_name()
     while next(data):
         a = next(data)
         b = next(data)
-        p = Pool(8)
+        p = Pool(100)
         for i in range(len(a)):
             p.apply_async(cinema_cinema, args=(a[i], b,))
             # p.apply_async(long_time_task, args=(a[i],))
