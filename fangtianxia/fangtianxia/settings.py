@@ -14,7 +14,7 @@ BOT_NAME = 'fangtianxia'
 SPIDER_MODULES = ['fangtianxia.spiders']
 NEWSPIDER_MODULE = 'fangtianxia.spiders'
 
-
+# LOG_FILE= "log.txt"
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'fangtianxia (+http://www.yourdomain.com)'
 

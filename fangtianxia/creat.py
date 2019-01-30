@@ -11,7 +11,8 @@ def ceartTable(cursor):
 
     # sql中的内容为创建一个名为student的表
     sql = """CREATE TABLE IF NOT EXISTS `fangtianxia` (
-              
+            `title` varchar(50),
+            `city` varchar(28),
             `url` VARCHAR(200),
             `url_hash` varchar(32),
             `oldprice` varchar(20),
