@@ -21,26 +21,26 @@ class SpiderSpider(scrapy.Spider):
                              )
 
     def parse(self, response):
-        citylist = response.css("div.onCont ul li a::attr(href)").extract()
-        cityname = response.css("div.onCont ul li a::text").extract()
-        # citylist = set(citylist)
-        # cityinformation = response.xpath("//div[@class='onCont']/ul/li/a/text()|//div[@class='onCont']/ul/li/a/@href").extract()
-        for url, name in zip(citylist, cityname):
-            url = parse.urljoin(response.url, url)
-            url = parse.urljoin(url, '/housing/')
-            # url = "https://abazhou.esf.fang.com/housing/"
-            yield scrapy.Request(url=url,
-                                 dont_filter=True,
-                                 meta={
-                                     'cityname': name,
-                                 },
-                                 callback=self.analysis_page)
-        # yield scrapy.Request(url='https://esf.fang.com/housing/',
-        #                      dont_filter=True,
-        #                      meta={
-        #                          'cityname': '北京',
-        #                      },
-        #                      callback=self.analysis)
+        # citylist = response.css("div.onCont ul li a::attr(href)").extract()
+        # cityname = response.css("div.onCont ul li a::text").extract()
+        # # citylist = set(citylist)
+        # # cityinformation = response.xpath("//div[@class='onCont']/ul/li/a/text()|//div[@class='onCont']/ul/li/a/@href").extract()
+        # for url, name in zip(citylist, cityname):
+        #     url = parse.urljoin(response.url, url)
+        #     url = parse.urljoin(url, '/housing/')
+        #     # url = "https://abazhou.esf.fang.com/housing/"
+        #     yield scrapy.Request(url=url,
+        #                          dont_filter=True,
+        #                          meta={
+        #                              'cityname': name,
+        #                          },
+        #                          callback=self.analysis_page)
+        yield scrapy.Request(url='https://esf.fang.com/housing/',
+                             dont_filter=True,
+                             meta={
+                                 'cityname': '北京',
+                             },
+                             callback=self.analysis)
     def analysis(self, response):
         pagelist = response.css("div.sq-info a::attr(href)").extract()
         for page in pagelist:
